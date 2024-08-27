@@ -9,16 +9,16 @@ export const metadata: Metadata = {
     default: "arygoenka-1t6r.vercel.app",
     template: "%s | arygoenka-1t6r.vercel.app",
   },
-  description: "student at UofM building Esca and open to work",
+  description: "Student at UofM building Esca and open to work",
   openGraph: {
     title: "arygoenka-1t6r.vercel.app",
     description:
-      "student at UofM building Esca and open to work",
+      "Student at UofM building Esca and open to work",
     url: "https://arygoenka-1t6r.vercel.app",
     siteName: "arygoenka-1t6r.vercel.app",
     images: [
       {
-        url: "https://arygoenka-1t6r.vercel.app",
+        url: "https://arygoenka-1t6r.vercel.app/og.png",
         width: 1920,
         height: 1080,
       },
@@ -37,10 +37,10 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  twitter: {
-    title: "Chronark",
-    card: "summary_large_image",
-  },
+  // twitter: {
+  //   title: "Chronark",
+  //   card: "summary_large_image",
+  // },
   icons: {
     shortcut: "/favicon.png",
   },
