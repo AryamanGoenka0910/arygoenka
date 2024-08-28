@@ -27,6 +27,7 @@ const pageData1 = {
 						I am working as an IA for the EECS 280 departement, programming and data structures. I have helped provide help within office hours
 						for a class of over 1000 students, and I taught a lab section once a week.
 					`,
+					duration: { start: "2024-08-22" },
                     tags: ["Instructional Aide (IA)"],
 					image: "/uofm.jpg"
                 },
