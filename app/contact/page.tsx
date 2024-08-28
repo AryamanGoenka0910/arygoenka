@@ -3,6 +3,8 @@ import { Github, Mail, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
+import { TimelineSection } from './TimelineSection';  // Adjust the path as necessary
+
 
 const socials = [
 	{
@@ -25,10 +27,85 @@ const socials = [
 	},
 ];
 
+const pageData1 = {
+    timelines: [
+        {
+            title: "Work",
+            milestones: [
+                {
+                    title: "JPMorgan Chase & Co.",
+                    description: "",
+                    duration: { start: "2024-01-10" },
+                    tags: ["Software Engineering Intern"],
+					image: "/jpmc.jpg"
+                },
+				{
+                    title: "University of Michigan EECS Departement",
+                    description: "",
+                    duration: { start: "2024-08-22" },
+                    tags: ["Instructional Aide (IA)"],
+					image: "/uofm.jpg"
+                },
+				{
+                    title: "Covanta Energy",
+                    description: "",
+                    duration: { start: "2023-06-22", end: "2023-08-11" },
+                    tags: ["Software Engineering Intern"],
+					image: "/covanta.jpg"
+                },
+            ]
+        },		
+    ]
+};
+
+const pageData2 = {
+    timelines: [
+        {
+            title: "Education",
+            milestones: [
+                {
+                    title: "University of Michigan",
+                    description: "Bachelor of Science in Computer Science",
+                    duration: { start: "2022-08-28" },
+                    tags: ["Computer Science", "Math"],
+					image: "/uofm.jpg"
+                },
+				{
+                    title: "Stuyvesant High School",
+                    description: "",
+                    duration: { start: "2018-09-10", end: "2022-06-26" },
+                    tags: ["New York City"],
+					image: "/stuy.png"
+                },
+            ]
+        },	
+	]
+};
+
 export default function Example() {
 	return (
-		<div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+		<div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
 			<Navigation />
+			<div className="flex-grow px-4 md:px-16 lg:px-32">
+				<div className="mb-14">
+					<div className="flex flex-col gap-4 pt-16 text-black md:flex-row">
+						<div className="w-full md:w-1/2 px-4 md:px-0">
+							<div className="border-b pb-5">
+								<div className="mt-2">
+									<TimelineSection timelines={pageData1.timelines} />
+								</div>
+							</div>
+						</div>
+						<div className="w-full md:w-1/2 px-4 md:px-0">
+							<div className="border-b pb-5">
+								<div className="mt-2">
+									<TimelineSection timelines={pageData2.timelines} />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
 					{socials.map((s) => (
