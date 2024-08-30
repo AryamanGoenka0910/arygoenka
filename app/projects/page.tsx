@@ -21,7 +21,7 @@ export default async function ProjectsPage() {
       title: "Pantry", 
       description: "Developed a website catering to college students, for inputting ingredients to generate recipe combinations", 
       date: "December 2023", 
-      repository: "AryamanGoenka/pantry"
+      repository: "AryamanGoenka/Pantry"
     }, 
     {
       title: "GitReadGo", 
@@ -62,7 +62,7 @@ export default async function ProjectsPage() {
 
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <Card>
-            <Link href={`/projects`}>
+            <Link href={`https://github.com/AryamanGoenka0910/Esca`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
                   <div className="text-xs text-zinc-100">
