@@ -11,13 +11,22 @@ const pageData1 = {
         {
             title: "Work",
             milestones: [
+				{
+                    title: "Palantir",
+                    description: `
+						Incoming FDSE Summer 2025
+					`,
+                    duration: { start: "2025-05-19" },
+                    tags: ["Foward Deployed Software Engineering Intern"],
+					image: "/palantir.png"
+                },
                 {
                     title: "JPMorgan Chase & Co.",
                     description: `
 						Developed and integrated an automated data pipeline for classifying commercial loan operations emails, handling 1-2
 						million emails annually, including extraction, summarization, and model evaluation on over 50,000 email attachments. 
 					`,
-                    duration: { start: "2024-01-10" },
+                    duration: { start: "2024-01-10", end: "2024-12-09" },
                     tags: ["Software Engineering Intern"],
 					image: "/jpmc.jpg"
                 },
